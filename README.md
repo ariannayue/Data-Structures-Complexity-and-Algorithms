@@ -48,9 +48,4 @@ result = [value for row in vec for value in row]
 print('Vec as a single list of values: %s' % result)
 - Vec as a single list of values: [1,2,3,4,5,6,7,8,9]
 
-Map and Filter in Python 3
-
-Formatting:
-
-map(function_name, sequence)
 
