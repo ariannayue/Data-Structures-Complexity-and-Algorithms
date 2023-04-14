@@ -1,0 +1,26 @@
+#The Map Function and Filter
+The Map Function:
+idea : applying a function to an iterable data 
+
+formatting:
+map(function_name, sequence)
+
+- function_name: any function (built-in or selfmade) that returns a desired 
+value of choice 
+- sequence: any iterable data type
+
+def square(num):
+  '''squares the given num argument'''
+  return num ** 2
+  
+ array = list(range(1,11)) #our iterable
+ square_array = list(map(square,array))
+ #map(function,sequence)
+ 
+ print('original array:' , array)
+ print('Array squared:', square_array)
+ 
+#second print statement prints out the squares of all numbers in ascending order
+Array Squared: [1,4,9,16,25,36,49,64,81,100]
+
+- THe map function doesn't return a specific data type, but eather, a python iterable data. AFTER WE APPLY THE MAP FUNCTIN, we use a list function on it.
