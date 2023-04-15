@@ -1,0 +1,55 @@
+#Tuples
+
+Differences between Strings and Lists:
+- Strings only have alphanumeric characters and special symbols to represent text
+- Lists allow all data types as its items/members
+- strings are immutable whereas Lists are mutable
+
+However since they differ in this way, we use tuples.
+Characteristics of tuples:
+- immutable
+- allows differnt datatypes as items 
+- iterable
+- nestable
+
+How tuples work:
+
+- declared with parenthesis ()
+- () --> empty tuple
+- (50,) is a singleton tuple; a comma is required
+- Tuples are sliceable and indexable with []
+
+Tuple example 1
+
+tup = ('C', 'Java','Python')
+empty_tup = ()
+single_tup = ('Park')
+
+print(tup)
+print(empty_tup)
+print(single_tup)
+
+a = (1,2,3)
+b = (4,5,6)
+concat_result = a + b
+print('a+b', concat_result)
+
+c = ('Hi!',)
+repet_result = c * 3
+print('c*3', repet_result)
+
+d = a + b + c
+print('d:', d)
+print('\'Hi!\' in d:', 'Hi!' in d) #back ward slash means new line or trying to escape special characters (the quotation marks and  to avoid creating a new string)
+print('7 in d:', 7 in d)
+
+print('7 in d:)
+
+output:
+a+b = (1,2,3,4,5,6)
+c*3 ('Hi!', 'Hi!', 'Hi!')
+d: (1,2,3,4,5,6,'Hi!')
+'Hi!' in d: True
+7 in d: False
+
+
