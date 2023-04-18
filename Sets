@@ -1,0 +1,56 @@
+#Sets
+- an unordered collection with no duplicate elements
+- 
+
+example_set2 = {'h','e','l','l','o'}
+print('example_set2:', example_set2}
+
+- can run the length, min, and max functions on it
+- can turn tuples and lists into sets
+
+Ex.
+tup = (2,3,5,7)
+print('tup to set:', set(tup))
+
+- memberish operator for sets is much more efficient compared to strings
+Ex. example_set = set('Hello')
+print('membership of: \'h\'", 'h' in example_set)
+print('non-membership of: \'z\'", 'z' not in example_set)
+
+- set is iterable, we CAN use for loop on it
+- .add() method adds an item to a set
+- .discard() removes an item 
+- .remove() deletes a value, but returns an error is something is not found
+- .pop() randmonly deletes a value and returns it
+- .clear() empty out a set
+
+Key terms:
+
+Union (| )= the joining/combining of two sets 
+Intersection (&) = members/items that only exist in both sets
+Difference (-) = members/items that onl exists in the first set and not the second set
+Symmetric difference (^): members/items that exists one or the other set, but not both sets
+Proper subset (<): A is proper subset of B if all members of A is found in B, but A cannot be EXACTLY the same as B
+*methods above can be used with an equal sign so that you can do these methods but update them at the same time
+Subset (<=): A is a subst of B if A<B is True, but A can equal to B unlike a proper subset 
+Superset (>=): A is a superset of B if A>B or A==B
+
+
+Disjoint: 
+- let A and B both represent a set
+- if A and B is empty, then set A and B are considered disjointed
+- we use a methods called .isdijoint()
+
+example:
+set1 = {1,2,3,4}
+set2 = {5,6,7}
+print('set1 intersect set2:', set1 & set2) #getting the values that these two sets have in common, which is none
+therefore
+print('set1 disjoint set2 checkL', set1.isdisjoint(set2)) #empty set which evaluates to True 
+
+Things you cannot do with sets:
+- aren't slicable or indexable
+- cannot have other sets inside of them
+- sets do not have an order, or order of insertion
+- cannot guarantee values will be in order (they dont have an order)
+- do not record a value's position
