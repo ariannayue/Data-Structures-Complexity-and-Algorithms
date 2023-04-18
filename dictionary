@@ -1,0 +1,73 @@
+#dictionary
+
+defintions in this lesson:
+
+- Dictionary (AKA Associative Array, map, symbol table) is a data type that stores a collection of pairs, so that each key appears at most once in the collection
+- pairs --> (key, value)
+
+common operations:
+- adding a pair
+- removing a pair
+- modify an existing pair
+
+Dictionaries also use {} like sets, but their fomat is very different than sets. 
+
+sammy = {'username:'sammy', 'online': True, 'followers': 42}
+
+print('sammy dict:', ssammy)
+print('username:', sammy['username']) #can access value using keys
+print('online status:', sammy['online']) #will return True
+print('follower count:', sammy['followers']) #will return 42
+
+Key properties of Keys:
+
+- must be immutable(strings, numbers, tuples, frozenset (ignore))
+- two same key values cannot exist in a single dictionary
+  - if you have a duplicate key and try to access value through it, it wil use the newest one over the previous 
+  
+Properties of Values:
+Values of dictionary within a key can be any data type
+
+WE CAN UPDATE VALUES
+
+sammy = {'username:'sammy', 'online': True, 'followers': 42}
+sammy['followers'] += 10 #adding 10 to the value at this key
+sammy['verified'] = True
+
+keyword:
+- del is used to remove (when you remove key, it removes value as well)
+- .clear() used to empty a dictionary
+  - {} is considered an empty dict
+  
+ Membership:
+ 
+ - checking to see if a KEY exists in a dictionary 
+  - uses in or not in
+  
+  Build in functions:
+- may use len
+- may use max
+- may use min
+- may turn dict into string
+- may turn dict into list
+
+Methods:
+
+- .copy()
+- .keys() return a seqeunce of keys
+- .items() returns a sequence of item values
+- .get(address) --> returns the item value at address
+- A.update(B) --> extends A with the dictionary of pairs for B
+
+Iterating:
+- may iterate using keys
+- may iterate using values
+- may iterating using both (the pairs)
+
+ .items() returns a sequence of item values
+ example:
+sammy = {'username:'sammy', 'online': True, 'followers': 42}
+for key, value in sammy.items():
+  print('current key: k)
+  print('current value:', v)
+  print()
